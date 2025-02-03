@@ -1,0 +1,21 @@
+meta {
+  name: alterar-cidade
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/placeti/cidades
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 11,
+    "nome": "Blumenau",
+    "uf": "SC",
+    "capital": false
+  }
+  
+}

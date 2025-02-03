@@ -1,0 +1,19 @@
+meta {
+  name: add-nova-cidade
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/placeti/cidades
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nome": "Florianopolis",
+    "uf": "SC",
+    "capital": true
+  }
+}
